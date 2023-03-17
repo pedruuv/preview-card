@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --fonte-principal: "Lexend Deca", sans-serif;
+  --fonte-secundaria: "Big Shoulders Display", cursive;
+}
+
+body {
+  font-size: 15px;
+  font-family: var(--fonte-principal);
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 350px));
+  justify-content: center;
+  grid-row-gap: 1em;
+}
+
+.container__elementos {
+  margin-top: 10em;
+  padding: 2em;
+}
+
+.elemento_a {
+  background: hsl(31, 77%, 52%);
+  border-radius: 15px 0 0 15px;
+}
+
+.elementos__titulo {
+  font-family: var(--fonte-secundaria);
+  font-size: 2.5em;
+  color: hsl(0, 0%, 95%);
+  margin: 0.9em 0;
+}
+
+img {
+  margin: 1em 0 0 1em;
+}
+
+.elementos__texto {
+  font-size: 1em;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 2em;
+}
+
+.elementos__botao {
+  background-color: hsl(0, 0%, 95%);
+  font-family: var(--fonte-principal);
+  padding: 1.2em;
+  width: 10em;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 20px;
+  transition: background 1s;
+}
+
+.botao_a {
+  color: hsl(31, 77%, 52%);
+}
+
+.elemento_b {
+  background: hsl(184, 100%, 22%);
+}
+
+.botao_b {
+  color: hsl(184, 100%, 22%);
+}
+
+.elemento_c {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 15px 15px 0;
+}
+
+.botao_c {
+  color: hsl(179, 100%, 13%);
+}
+
+.elementos__botao:hover {
+  background: none;
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.desenvolvido {
+  margin-top: 2em;
+  text-align: center;
+}
